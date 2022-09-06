@@ -1,0 +1,11 @@
+from ubuntu:22.04
+
+Run apt update
+Run apt -y update
+Run apt-get install -y python3-pip
+Run pip3 --no-cache-dir install \
+                pyopenssl \
+                ndg-httpsclient \
+                pyasn1 \
+WORKDIR "/root"
+CMD ["/bin/bash"]

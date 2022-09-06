@@ -1,0 +1,13 @@
+version: "3"
+services:
+        one:
+               build:
+                      context: .
+                      dockerfile: ./one1/dockerfile
+               image: one1
+
+        two:
+               build:
+                      context: .
+                      dockerfile: ./two2/dockerfile
+               image: two2
